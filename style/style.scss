@@ -43,6 +43,7 @@ body {
       input {
         width: 100%;
         padding: 10px;
+        font: 500 0.9rem 'Roboto', sans-serif;
         margin-bottom: 10px;
         border: 1px solid var(--black);
         border-radius: 6px;
@@ -65,12 +66,28 @@ body {
       }
     }
 
+    p.local-storage-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 14px;
+      font: 500 0.9rem 'Roboto', sans-serif;
+
+      span.local-storage-content__word {
+        font-weight: 700;
+      }
+    }
+
     p.after-submit-message {
       display: none;
       justify-content: center;
       align-items: center;
       margin-top: 14px;
       font: 500 0.9rem 'Roboto', sans-serif;
+
+      span.after-submit-message__word {
+        font-weight: 700;
+      }
     }
   }
 }

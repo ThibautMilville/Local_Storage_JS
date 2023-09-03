@@ -41,6 +41,7 @@ body section form label {
 body section form input {
   width: 100%;
   padding: 10px;
+  font: 500 0.9rem "Roboto", sans-serif;
   margin-bottom: 10px;
   border: 1px solid var(--black);
   border-radius: 6px;
@@ -59,10 +60,23 @@ body section form button:hover {
   color: var(--white);
   background-color: var(--black);
 }
+body section p.local-storage-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
+  font: 500 0.9rem "Roboto", sans-serif;
+}
+body section p.local-storage-content span.local-storage-content__word {
+  font-weight: 700;
+}
 body section p.after-submit-message {
   display: none;
   justify-content: center;
   align-items: center;
   margin-top: 14px;
   font: 500 0.9rem "Roboto", sans-serif;
+}
+body section p.after-submit-message span.after-submit-message__word {
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
