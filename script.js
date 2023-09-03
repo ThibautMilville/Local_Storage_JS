@@ -36,7 +36,7 @@ class localStorage {
     this.button.addEventListener('click', (event) => {
       event.preventDefault();
       this.setItem('word', this.input.value);
-      this.newStoredWord.innerHTML = "The new word registered is:&nbsp;<span class='after-submit-message__word'>" + this.getItem('word') + "</span><br>Refresh the page to see the previous word.";
+      this.newStoredWord.innerHTML = "The new word registered is:&nbsp;<span class='after-submit-message__word'>" + this.getItem('word') + "</span>";
       this.newStoredWord.style.display = 'flex';
     });
   }
