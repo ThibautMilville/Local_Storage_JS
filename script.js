@@ -15,8 +15,10 @@ class localStorage {
   }
 
   load() {
+    // Functions
     this.displayPreviousWord();
 
+    // Bind events
     this.bindEvents();
   }
 
