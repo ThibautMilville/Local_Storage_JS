@@ -2,6 +2,7 @@
   --white: #fff;
   --black: #000;
   --clear-pink: #f5c5c5;
+  --medium-pink: #f5a5a5;
 }
 
 * {
@@ -88,5 +89,7 @@ body section p.refresh-page {
   font: 500 0.9rem "Roboto", sans-serif;
 }
 body section p.refresh-page span.refresh-page__link {
+  color: var(--medium-pink);
   font-weight: 700;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
