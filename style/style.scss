@@ -89,5 +89,17 @@ body {
         font-weight: 700;
       }
     }
+
+    p.refresh-page {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      margin-top: 14px;
+      font: 500 0.9rem 'Roboto', sans-serif;
+
+      span.refresh-page__link {
+        font-weight: 700;
+      }
+    }
   }
 }

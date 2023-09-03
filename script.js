@@ -7,7 +7,9 @@ class localStorage {
 
     this.previousStoredWordParagraph = document.getElementsByClassName('local-storage-content')[0];
     this.previousStoredWord = document.getElementsByClassName('local-storage-content__word')[0];
+
     this.newStoredWord = document.getElementsByClassName('after-submit-message')[0];
+    this.refreshLink = document.getElementsByClassName('refresh-page__link')[0];
   }
 
   load() {
@@ -33,11 +35,17 @@ class localStorage {
   }
 
   bindEvents() {
+    // Update local storage
     this.button.addEventListener('click', (event) => {
       event.preventDefault();
       this.setItem('word', this.input.value);
       this.newStoredWord.innerHTML = "The new word registered is:&nbsp;<span class='after-submit-message__word'>" + this.getItem('word') + "</span>";
       this.newStoredWord.style.display = 'flex';
+    });
+    // Refresh page
+    this.refreshLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      window.location.reload();
     });
   }
 }

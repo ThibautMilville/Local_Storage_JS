@@ -79,4 +79,14 @@ body section p.after-submit-message {
 }
 body section p.after-submit-message span.after-submit-message__word {
   font-weight: 700;
+}
+body section p.refresh-page {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
+  font: 500 0.9rem "Roboto", sans-serif;
+}
+body section p.refresh-page span.refresh-page__link {
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
