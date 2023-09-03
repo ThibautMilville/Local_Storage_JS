@@ -1,0 +1,76 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --clear-pink: #f5c5c5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--clear-pink);
+
+  section {
+    background-color: var(--white);
+    padding: 30px 40px;
+    border: 3px solid var(--black);
+    border-radius: 6px;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        width: 100%;
+        text-align: left;
+        font: 500 1.1rem 'Roboto', sans-serif;
+        margin-bottom: 10px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid var(--black);
+        border-radius: 6px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid var(--black);
+        border-radius: 6px;
+        font: 700 1.1rem 'Roboto', sans-serif;
+        background-color: var(--clear-pink);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: var(--white);
+          background-color: var(--black);
+        }
+      }
+    }
+
+    p.after-submit-message {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      margin-top: 14px;
+      font: 500 0.9rem 'Roboto', sans-serif;
+    }
+  }
+}
